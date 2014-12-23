@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://imheresamir.github.io/sitemap.xml 
