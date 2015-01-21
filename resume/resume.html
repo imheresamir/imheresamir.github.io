@@ -8,121 +8,96 @@
 
 <body>
 <style>
+pre {
+    -moz-tab-size: 4;
+    -o-tab-size:   4;
+    tab-size:      4;
+}
+
 .json {
-	font-size: 16;
+	font-size: 11;
 }
 
 body {
 	background-color: black;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
 </style>
-<pre><code class="json">
-{
-	"<b>Name</b>": 					"<b><u>Samir B. Bhatt</u></b>",
-	"<b>Address</b>": 					"6653 Trigo Rd. Unit A, Goleta, CA 93117",
-	"<b>Phone</b>": 					"408-931-4743",
-	"<b>E-Mail</b>": 					"sbbhatt8@gmail.com",
+<pre><code class="json">{
+	"<b>Name</b>": 						"<b>Samir B. Bhatt</b>",
+	"<b>Address</b>": 						"6653 Trigo Rd. Unit A, Goleta, CA 93117",
+	"<b>Phone</b>": 						"408-931-4743",
+	"<b>E-Mail</b>": 						"sbbhatt8@gmail.com",
 	"<b>Repository</b>":					"github.com/imheresamir",
-	"<b>Website</b>": 					"imheresamir.github.io",
-
-	"<b>Objective</b>": 					"",
-
-	"<b>Education</b>": {
-
-	},
+	"<b>Website</b>": 						"imheresamir.github.io",
 
 	"<b>Technical Skills</b>": {
-		"Languages": [
-							"Go",
-							"Java",
-							"Javascript",
-							"SQL",
-							"Python",
-							"C",
-							"C++",
-							"HTML/CSS",
-							"Assembler (x86/ARM)"
-		],
-
-		"Web Frameworks": [
-							"Angular",
-							"Famo.us"
-		],
-
-		"Mobile Platforms": [
-							"Android",
-							"Crossplatform (WebView)"
-		]
+		"Languages": 				["Go", "Java", "Javascript", "SQL", "Python", "C", "C++",
+										"HTML/CSS", "Assembler (x86/ARM)"],
+		"Web Frameworks": 			["Angular", "Famo.us"],
+		"Mobile Platforms": 		["Android", "Crossplatform (WebView)"]
 	},
 
-	"<b>Experience</b>": {
-		"Positions Held": [
-			{
-				"Name": 		"<b><u>Product Programmer and Tester</u></b>",
-				"Date": 		"2005-2007",
-				"Organization": {
-					"Name":		"HDX-TV Engineering, LLC",
-					"Location":	"Santa Clara, CA"
-				},
-				"Duties": [
-							"RX-2000 unit assembly",
-							"Component installation",
-							"Main processor firmware programming",
-							"Final unit testing"
-				]
+	"<b>Experience</b>": [
+		{
+			"Position": 			"<b>Software Engineering Intern</b>",
+			"Date": 				"January 2015",
+			"Organization": {
+				"Name":				"AUSPA Technology",
+				"Location":			"Pune, Maharashtra, India"
 			},
-			{
-				"Name": 		"<b><u>Software Engineering Intern</u></b>",
-				"Date": 		"January 2015",
-				"Organization": {
-					"Name":		"AUSPA Technology",
-					"Location":	"Pune, Maharashtra, India"
-				},
-				"Duties": [
-							"Atmel ATmega48 microcontroller programming"
-				]
+			"Duties": 				["Programmed Atmel ATmega48 microcontroller"]
+		},
+		{
+			"Position": 			"<b>Product Programmer and Tester</b>",
+			"Date": 				"2005-2007",
+			"Organization": {
+				"Name":				"HDX-TV Engineering, LLC",
+				"Location":			"Santa Clara, CA"
 			},
-		],
+			"Duties": 				["Assembled RX-2000 units", "Installed hardware components",
+										"Programmed main processor firmware"]
+		}
+	],
 
-		"Projects": [
-			{
-				"Name":			"<b><u>PiCast</u></b>",
-				"Url":			"github.com/imheresamir/picast",
-				"Summary":		"Broadcast video streams and Spotify media to RaspberryPi",
-				"Languages and Technologies Applied": [
-							"Go",
-							"libspotify API",
-							"Famo.us (Javascript)",
-							"RequireJS",
-							"Shell scripting",
-							"JSON-REST",
-							"IPC via RPC"
-				]
-			},
-			{
-				"Name":			"<b><u>PiCast Android Client</u></b>",
-				"Url":			"github.com/imheresamir/picast-android",
-				"Summary":		"PiCast client app for Android",
-				"Languages and Technologies Applied": [
-							"Android SDK (Java)",
-							"Crosswalk WebView"
-				]
-			},
-			{
-				"Name":			"<b><u>PiCast Chrome Client</u></b>",
-				"Url":			"github.com/imheresamir/picast-chrome",
-				"Summary":		"PiCast client extension for Chrome",
-				"Languages and Technologies Applied": [
-							"Google Chrome Extension API (Javascript)"
-				]
-			}
+	"<b>Education</b>": [
+		{
+			"Institution":			"<b>University of California, Santa Barbara</b>",
+			"Major":				"Computer Engineering (in progress)",
+			"Relevant Coursework":	["Fundamentals of Logic Design"]
+		},
+		{
+			"Institution": 			"<b>Santa Barbara City College</b>",
+			"Major":				"Computer Science",
+			"Relevant Coursework":	["C++", "Java", "Software Engineering", "Data Structures",
+										"SQL Server", "x86 Assembly", "Android"]
+		}
 
-		]
+	],
 
-	},
+	"<b>Projects</b>": [
+		{
+			"Name":					"<b>PiCast</b>",
+			"Url":					"github.com/imheresamir/picast",
+			"Summary":				"Broadcast video streams and Spotify media to RaspberryPi",
+			"Languages and Technologies Applied":
+									["Go", "libspotify API", "Famo.us (Javascript)", "RequireJS",
+										"Shell scripting", "JSON-REST", "IPC via RPC"]
+		},
+		{
+			"Name":					"<b>PiCast Android Client</b>",
+			"Url":					"github.com/imheresamir/picast-android",
+			"Summary":				"PiCast client app for Android",
+			"Languages and Technologies Applied":
+									["Android SDK (Java)", "Crosswalk WebView"]
+		}
 
-	"<b>Honors and Awards</b>": 				["National Merit Commended (2009)"]
+	],
 
+	"<b>Honors and Awards</b>": 			["<b>National Merit Commended (2009)</b>"]
 }
 </code></pre>
 </body>
