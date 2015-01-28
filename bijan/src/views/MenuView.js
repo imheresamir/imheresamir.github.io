@@ -65,11 +65,10 @@ define(function(require, exports, module) {
             this.add(stripModifier).add(stripView);
 
             var superThis = this;
-            stripView.on('hi', function() {
+            stripView.on('menuClicked', function() {
 
                 //console.log(this.options.title);
                 superThis._eventOutput.emit(this.options.title);
-                //this.container.scrollview.goToNextPage();
             });
 
             yOffset += this.options.stripOffset;

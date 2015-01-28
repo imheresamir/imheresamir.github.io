@@ -111,15 +111,6 @@ define(function(require, exports, module) {
             }
         });
 
-        this.bodySurface = new Surface({
-            size : [undefined, true],
-            properties: {
-                //backgroundColor: '#41496d',
-                backgroundColor: 'black',
-                borderTop: '1px solid #e1e7a1'
-            }
-        });
-
         var surfaces = [];
 
         this.container.sequenceFrom(surfaces);
@@ -171,7 +162,7 @@ define(function(require, exports, module) {
             this._eventOutput.emit('menuToggle');
         }.bind(this));
 
-        this.bodySurface.pipe(this._eventOutput);
+        this.container.pipe(this._eventOutput);
     }
 
     module.exports = PageView;

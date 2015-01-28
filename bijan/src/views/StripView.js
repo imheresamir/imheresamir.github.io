@@ -41,8 +41,7 @@ define(function(require, exports, module) {
         var superThis = this;
 
         backgroundSurface.on('click', function() {
-            superThis._eventOutput.emit('hi');
-            //this.container.scrollview.goToNextPage();
+            superThis._eventOutput.emit('menuClicked');
         });
 
         var rotateModifier = new StateModifier({
@@ -80,7 +79,8 @@ define(function(require, exports, module) {
                 fontSize: this.options.fontSize + 'px',
                 textTransform: 'uppercase',
                 pointerEvents : 'none',
-                lineHeight: '50px'
+                lineHeight: '50px',
+                fontWeight: 'bold'
             }
         });
 
