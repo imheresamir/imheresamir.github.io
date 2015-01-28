@@ -1,9 +1,12 @@
 html {
-    background-color: #41496d;
-    color: #000;
+    font-family: 'AvenirNextCondensed-DemiBold';
 }
 
-.double-sided {
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
